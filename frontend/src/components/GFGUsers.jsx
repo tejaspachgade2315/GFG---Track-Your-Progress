@@ -7,9 +7,11 @@ const GFGUsers = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8111/").then((response) => {
-      setUsers(response.data);
-    });
+    axios
+      .get("https://gfg-track-your-progress.onrender.com/")
+      .then((response) => {
+        setUsers(response.data);
+      });
   }, []);
 
   return (

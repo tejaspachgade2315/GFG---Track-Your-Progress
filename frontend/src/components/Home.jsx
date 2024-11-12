@@ -33,7 +33,7 @@ const Home = () => {
   };
   const saveToDB = async () => {
     await axios.post(
-      "http://localhost:8111/submit",
+      "https://gfg-track-your-progress.onrender.com/submit",
       { username: username.trim() },
       {
         headers: {
