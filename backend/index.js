@@ -7,7 +7,6 @@ require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 3000;
 
-
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
@@ -17,7 +16,6 @@ mongoose
     .connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB connected"))
     .catch((err) => console.log(err));
-
 
 
 // Model/Schema
@@ -88,6 +86,6 @@ app.get("/", async (req, res) => {
     });
 });
 
-app.listen(8111, () => {
-    console.log("Listening on port 8111");
+app.listen(port, () => {
+    console.log("Listening on port ", port);
 }) 
