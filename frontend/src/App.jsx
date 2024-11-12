@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import GFGUsers from "./components/GFGUsers";
 
-
-
 function App() {
   return (
     <>
